@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html {
+font-size: 7px;
+}
+body {
+background: url(/static/io.jpg) no-repeat center center fixed;
+background-size: cover;
+}
+.container {
+max-width: 1100px;
+margin: 0 auto;
+padding: 3rem;
+margin-top: 4rem;
+text-align: center;
+}
+h1 {
+color: rgb(207, 150, 6);
+font-size: 5rem;
+font-weight: 700;
+letter-spacing: 8px;
+margin-bottom: 2rem;
+font-family: 'Aladin',cursive;
+}
+h2 {
+color: #777;
+font-size: 4rem;
+font-weight: 400;
+}
+.image {
+margin-top: 2rem;
+margin-bottom: 5rem;
+}
+p {
+font-size: 2.2rem;
+color: rgb(255, 255, 255);
+line-height: 4rem;
+margin-bottom: 3.8rem;
+font-weight: 500;
+}
+.boo-btn {
+display: inline-block;
+padding: 2.7rem 7.5rem;
+background: rgb(207, 150, 6);
+font-size: 2rem;
+font-weight: 800;
+text-decoration: none;
+color: rgb(14, 13, 13);
+border-radius: 10px;
+transition: background 0.5s;
+}
+.boo-btn:hover {
+background: rgb(255, 254, 252);
+}

@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts
+     script(src='/static/index.js')
+
+block style
+       style
+           include ../static/style.css
+           include ../static/styleabout.css
+block system
+    section
+      .image
+        // image/
+      .content
+        h2 About Us
+        span
+          // line here
+        p
+          | "Meena Larai" is
+          | one of the most trending
+          | Tiktok personality in Pakistan. She is primarily famous for comedy video clips and performs lip-syncs on
+          | Tiktok(Musical.ly).Most fans would agree that the ‘Queen of TikTok’ is Meena Larai, with 1 Million Followers
+          | on tiktok,her motivational videos, helping her followers build the confidence to reach their dreams.. Meena
+          | was born On Octuber 7, 1996 Karachi, Sindh, PK, Currently she is living in Mirpurkhas with her family.
+        ul.links
+          li
+            a(href='#') Work
+          .vertical-line
+          li
+            a(href='#') Services
+          .vertical-line
+          li
+            a(href='#') Contact
+        ul.mediaicon
+          li
+            i.fabu.fa-facebook
+          li
+            i.fabu.fa-instagram
+          li
+            i.fabu.fa-youtube
+          li
+            i.fabu.fa-google
+          li
+            i.fabu.fa-twitter

@@ -1,0 +1,24 @@
+{
+  "name": "akwebsite",
+  "version": "1.0.0",
+  "description": "This website is the popular website in the world..",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "browserify": "^17.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Website"
+  ],
+  "author": "Ajay Kumar Ganguja",
+  "license": "ISC"
+}

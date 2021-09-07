@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+body {
+background: url("/static/contact.jpg")  no-repeat center center fixed;
+background-size: cover;
+}
+.logo {
+font-family: 'Arizonia', cursive;
+color: #fff;
+font-size: 42px;
+justify-content: center;
+display: flex;
+width: 30%;
+}
+.logo:hover {
+color: rgb(207, 150, 6);
+}
+.navbar {
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+top: 0;
+position: sticky;
+cursor: pointer;
+}
+.navlist {
+flex: 1;
+text-align: right;
+padding: 19px 18px;
+}
+.navlist li {
+list-style: none;
+padding: 8px 12px;
+display: inline-block;
+}
+.navlist li a {
+font-size: 17px;
+color: #fff;
+text-decoration: none;
+font-size: 14px;
+}
+.navlist li a::after {
+content: '';
+width: 0%;
+height: 2px;
+background: rgb(207, 150, 6);
+display: block;
+margin: auto;
+transition: 0.5s;
+}
+.navlist li a:hover::after {
+width: 100%;
+}
+.contact {
+position: relative;
+min-height: 100vh;
+padding: 50px 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.contact .content {
+max-width: 800px;
+text-align: center;
+}
+.contact .content h2 {
+font-size: 42px;
+font-weight: 600;
+color: rgb(207, 150, 6);
+}
+.contact .content p {
+color: #fff;
+font-size: 18px;
+padding-top: 0px;
+}
+.container {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+}
+.container .contactinfo {
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+.container .contactinfo .box {
+position: relative;
+padding: 20px 0;
+display: flex;
+}
+.container .contactinfo .box .icon3 {
+min-width: 60px;
+height: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50px;
+background: #fff;
+}
+.fa-envelope {
+color: #464236;
+font: normal normal normal 11px/1 FontAwesome;
+font-size: inherit;
+-webkit-font-smoothing: antialiased;
+text-align: center;
+text-decoration: none;
+font-size: xx-large
+}
+.fa-phone {
+color: #464236;
+font: normal normal normal 11px/1 FontAwesome;
+font-size: inherit;
+-webkit-font-smoothing: antialiased;
+text-align: center;
+text-decoration: none;
+font-size: xx-large
+}
+.fa-map-marker {
+color: #464236;
+font: normal normal normal 11px/1 FontAwesome;
+font-size: inherit;
+-webkit-font-smoothing: antialiased;
+text-align: center;
+text-decoration: none;
+font-size: xx-large
+}
+.container .contactinfo .box .text {
+display: flex;
+margin-left: 20px;
+font-size: 16px;
+color: #fff;
+flex-direction: column;
+font-weight: 300;
+}
+.container .contactinfo .box .text h3 {
+font-weight: 500;
+color: rgb(207, 150, 6);
+}
+.contactform {
+width: 40%;
+padding: 40px;
+border-radius: 18px;
+background: #fffafa17;
+box-shadow: 20px 20px 50px rgb(0 0 0 / 79%);
+}
+.contactform h2 {
+font-size: 30px;
+color: black;
+font-weight: 500;
+}
+.contactform .inputbox {
+position: relative;
+width: 100%;
+margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+width: 100%;
+padding: 5px 0;
+font-size: 16px;
+margin: 10px 0;
+border: none;
+border-bottom: 2px solid #333;
+outline: none;
+background: none;
+resize: none;
+}
+.contactform .inputbox span {
+position: absolute;
+left: 0;
+padding: 5px 0;
+font-size: 17px;
+margin: 10px 0;
+pointer-events: none;
+transition: 0.5s;
+color: #fff;
+}
+.contactform .inputbox input:focus~span,
+.contactform .inputbox input:valid~span,
+.contactform .inputbox textarea:focus~span,
+.contactform .inputbox textarea:valid~span {
+color: rgb(207, 150, 6);
+font-size: 13px;
+transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"] {
+width: 100%;
+background: rgb(207, 150, 6);
+color: #fff;
+border: none;
+cursor: pointer;
+padding: 10px;
+font-size: 18px;
+}
+footer p {
+display: block;
+text-align: center;
+align-items: center;
+font-size: 19px;
+font-weight: 500;
+color: #fff;
+}
+/*media query*/
+@media(max-width: 991px) {
+.contact {
+padding: 50px;
+}
+.container {
+flex-direction: column;
+}
+.container .contactinfo {
+margin-bottom: 40px;
+}
+.container .contactinfo,
+.container .contactform {
+width: 100%;
+}}

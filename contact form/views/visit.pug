@@ -1,0 +1,25 @@
+extends base.pug
+
+block scripts
+     script(src='/static/index.js')
+
+block style
+       style
+           include ../static/style.css
+           include ../static/stylevisit.css
+block system
+     body
+      .container
+       h2 Hello, my name is
+       h1 Ajay Kumar Ganguja
+         .image
+           img(src='../static/ajay1.png' width='300px' height='280px' alt='Photograph of Me')
+         p
+           | I'm a full-stack web developer specialised in frontend and backend development, 
+           br
+           |  I have more than 8 year
+           |             of experience building rich web application for clients all over the world 
+           br
+           |  If you are interested in hiring me for your
+           |             project please press the button below to get in touch with me..
+         a.boo-btn(href='https://www.facebook.com/profile.php?id=100009397025328') Hire Me

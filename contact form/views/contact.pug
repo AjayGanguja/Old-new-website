@@ -1,0 +1,53 @@
+extends base.pug
+
+block scripts
+     script(src='/static/index.js')
+
+block style
+       style
+           include ../static/style.css
+           include ../static/stylecontact.css
+block system
+    section.contact
+      .content
+        h2 Contact Us
+        p  Vist or Get in Touch.. Send us a Message using the Form Below
+      .container
+        .contactinfo
+          .box
+            .icon3
+              i.fas.fa-map-marker
+            .text
+              h3 Address
+              p
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                br
+                |  Consectetur laboriosambr 
+                br
+                |                             error quis!
+          .box
+            .icon3
+              i.fas.fa-phone
+            .text
+              h3 Phone
+              p 0922884799
+          .box
+            .icon3
+              i.far.fa-envelope
+            .text
+              h3 Email
+              p ajay@ajay
+        .contactform
+          form(action="/contact", method="post" class="myform")
+            h2 Send Message
+            .inputbox
+              input(type='text' name='' required='required')
+              span Full Name
+            .inputbox
+              input(type='text' name='' required='required')
+              span Email
+            .inputbox
+              textarea(required='required')
+              span Type Your Message...
+            .inputbox
+              input.lovebtn(type='submit' value='Send')

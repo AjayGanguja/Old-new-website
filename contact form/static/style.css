@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0), rgb(14, 22, 95),rgb(0, 0, 0), rgb(66, 11, 11))
+}
+html{
+    scroll-behavior: smooth;
+}
+  
+
+.boxmain {
+    width: 50%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.logo{
+    font-family: 'Arizonia', cursive;
+    color: #f9fcfd;
+    font-size: 42px;
+    justify-content: center;
+    display: flex;
+    width: 30%;
+}
+
+.logo:hover{
+    color: rgb(207, 150, 6);
+    text-shadow: 0px 0px 10px goldenrod,
+    0px 0px 20px goldenrod,;
+}
+
+.navbar {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    cursor: pointer;
+}
+ .navlist{
+        flex: 1;
+        text-align: right;
+        padding: 19px 18px;
+ }
+
+.navlist li{
+    list-style: none;
+    padding: 8px 12px;
+display: inline-block;
+}
+.navlist li a {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.navlist li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(207, 150, 6);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navlist li a:hover::after{
+width: 100%;
+   
+}
+
+.textbig{
+   color: #fff;
+   font-size: 80px;
+   text-align: center;
+   margin-top: 250px;
+   text-shadow: 0px 0px 10px goldenrod,
+                 0px 0px 20px goldenrod,
+                 0px 0px 30px goldenrod,
+                 0px 0px 40px goldenrod,
+                 0px 0px 50px goldenrod,
+                 0px 0px 60px goldenrod,
+                 0px 0px 70px goldenrod;
+}
+
+.textsmall{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-shadow: 0px 0px 10px gold,
+}
+.button123{
+    display: inline-block;
+    text-decoration: none;
+}
+.button-btn{
+   
+    padding: 12px 13px;
+    margin: 7px 3px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, cursive;
+    font-size: 13px;
+    border-radius: 9px;
+}
+
+.button-btn:hover{
+    border: 1px solid rgb(207, 150, 6);
+    background: rgb(207, 150, 6);
+    color:#fff;
+    transition: 1s;
+    text-decoration: none;
+}
+
+/* Services Section */
+#services-container{
+margin-top: 111px;
+}
+
+#services{
+   position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+margin: auto;
+}
+#services .box {
+   position: relative;
+   width: 300px;
+   height: 400px;
+   margin: 30px;
+   box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+   border-radius: 15px;
+   background: rgba(255,255,255,0.1);
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-top: 1px solid rgba(255,255,255,0.5);
+   border-left: 1px solid rgba(255,255,255,0.5);
+   backdrop-filter: blur(5px);
+}
+
+#services .box img {
+        padding-top: 2px;
+        height: 103px;
+        width: 102px;
+        margin: auto;
+        display: block;
+        border-radius: 104px;
+}
+#services .box .content{
+padding: 20px;
+text-align: center;
+transform: translateY(100px);
+transition: 0.5s;
+opacity: 0;
+} 
+#services .box:hover .content{
+    transform: translateY(0px);
+opacity: 1;
+}
+.h-primary {
+ color:#fff;
+    direction: center;
+    display: block;
+    text-align: center;
+    font-size: 3.7em;
+    margin-bottom: 33px;
+    font-family: 'Baloo Bhai 2';
+}
+.fa-key{
+   color: rgb(207, 150, 6);
+    font-size: 11px;
+    font: normal normal normal 11px/1 FontAwesome;
+    font-size: inherit;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    text-decoration: none;
+
+}
+.h-secondary{
+    font-size: 1.4em;
+    color: rgb(207, 150, 6);
+    z-index: 1;
+}
+.center{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+.fa-quote-left{
+    color: white;
+    font-size: 11px;
+    font: normal normal normal 11px/1 FontAwesome;
+    font-size: inherit;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-quote-right{
+    color: white;
+    font-size: 11px;
+    font: normal normal normal 11px/1 FontAwesome;
+    font-size: inherit;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+nav .fas{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+}
+
+
+#wrap-text{
+   position: relative;
+   width: 100%;
+   padding: 50px;
+}
+
+#wrap-text p{
+    color: #fff;
+    font-size: 1.2em;
+text-align: justify;
+
+}
+#wrap-text h3{
+    font-size: 2.8em;
+    color: aliceblue;
+    font-family: ui-serif;
+}
+.girl{
+    height: 500px;
+    float: left;
+    shape-outside: url(pic.png);
+    /*important : local or web server is required to perform this action*/
+   margin-right: 20px;
+   shape-margin: 20px;
+   margin-left: -215px;
+}
+.girlmeena {
+    width: 500px;
+    float: right;
+    shape-outside: url(meena2.png);
+    shape-margin: 20px;
+    margin-left: 20px;
+    margin-top: 270px;
+}
+
+footer{
+    padding: 44px 0;
+}
+.footer-container{
+   max-width: 1300px;
+   margin: auto;
+   padding: 0 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap-reverse;
+}
+.logo2{
+    font-family: 'Arizonia', cursive;
+    color: rgb(207, 150, 6);
+    font-size: 72px;
+    justify-content: center;
+    display: flex;
+   
+}
+/*right*/
+.right-text{
+    color: #666;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.right-col h1{
+    font-size: 28px;
+    color: rgb(207, 150, 6);
+}
+.right-col p{
+    font-size: 18px;
+    color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.left-col{
+    font-size: 18px;
+    color: #fff;
+    padding-top: 18px;
+    padding-bottom: 12px;
+}
+.border12{
+    width: 100px;
+    height: 4px;
+    background: rgb(207, 150, 6);
+
+}
+.newsletter-force{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+}
+.txtb{
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: rgb(61, 55, 55);
+    background-color: #dad3d3;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+}
+.press{
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color:rgb(207, 150, 6);
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 30px;
+    cursor: pointer;
+    transition: opacity .3s;
+}
+.press:hover{
+    opacity: .7;
+}
+.page-content{
+    min-height: 100vh;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+.banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner .blocks{
+    position: relative;
+    display: block;
+    width: 5vh;
+    height: 5vh;
+    animation: animate 2s ease-in-out forwards;
+    animation-delay: 1s;
+}
+@keyframes animate
+   {
+    0%
+    {
+        transform : translateZ(2000px);
+        background: center/cover no-repeat url("/static/wallpaper.jpg");
+            background-attachment: fixed;
+    }
+    100%
+    {
+        transform: translateZ(0px);
+        background: center/cover no-repeat url("/static/wallpaper.jpg");
+            background-attachment: fixed;
+       
+        box-shadow: 0 5px 15px rgba(0,0,0,0);
+    }
+}
+header.active .banner .blocks
+{
+    animation: animateTwo 2s ease-in-out forwards;
+    background: center/cover no-repeat url("/static/wallpaper.jpg");
+            background-attachment: fixed;
+   
+    
+}
+@keyframes animateTwo
+{
+        0%
+        {
+            transform : translateZ(0px);
+            background: center/cover no-repeat url("/static/wallpaper.jpg");
+            background-attachment: fixed;
+
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+        100%
+        {
+            transform: translateZ(2000px);
+            background: center/cover no-repeat url("/static/wallpaper.jpg");
+            background-attachment: fixed;
+           
+            box-shadow: 0 5px 15px rgba(0,0,0,0);
+        }
+}

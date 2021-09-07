@@ -1,0 +1,25 @@
+//- base.pug
+doctype html
+html
+  head
+    title website
+    block scripts
+    block style
+  body
+    nav.navbar
+            .logo Meena Larai
+            ul#navlist.navlist
+              li.item
+                a(href='/') Home
+              li.item
+                a(href='/about') About
+              li.item
+                a(href='/contact') Contact
+              li.item
+                a(href='/social') Social media
+              li.item
+                a(href='/visit') Visit here
+    block system
+    block foot
+      #footer
+        p some footer content
